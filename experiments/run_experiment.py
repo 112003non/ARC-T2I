@@ -3,7 +3,7 @@ import simpy
 import argparse
 import numpy as np
 
-from async_dispatch_simulator import (
+from simulator.async_dispatch_simulator import (
     GPUQueue,
     TaskGenerator,
     TimestampTaskGenerator,
