@@ -9,15 +9,12 @@ from simulator.async_dispatch_simulator import (
     TimestampTaskGenerator,
     Dispatcher,
     GlobalEventLogger,
-
-    # routing (tunable factory)
-    make_routing_policy,
-
-    # batching
-    ThresholdBatching,
 )
 
-from config_and_utils import (
+from arc.routing import make_routing_policy
+from arc.batching import ThresholdBatching
+
+from scripts.config_and_utils import (
     default_wait_candidates,
     compute_latency_stats,
     plot_backlogs,
@@ -25,6 +22,7 @@ from config_and_utils import (
     sublinear_tau_fn,
     build_tau_from_profile_csv,
 )
+
 
 # ---------- parsing helpers ----------
 
